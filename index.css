@@ -1,0 +1,62 @@
+:root {
+    --bg: #070b20;
+    --bg-soft: #0d1430;
+    --surface: rgba(17, 27, 59, 0.78);
+    --surface-hover: rgba(26, 39, 78, 095);
+    --text: #f4f7ff;
+    --muted: #a6b2d1;
+    --cyan: #69e5ff;
+    --violet: #a78bfa;
+    --pink: #f0abfc;
+    --border: rgba(151, 177, 255, 0.17);
+
+    --font-body: "Inter", sans-serif;
+    --font-display: "Asimovian", sans-serif;
+
+    --radius-sm: 12pxl
+    --radius-md: 20px;
+    --raidus-lg: 28px;
+
+    --container: 1180px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    color: var(--text);
+    background: 
+        radial-gradient(
+            ellipse at 15% 10%,
+            rgba(53, 69, 160, 0.24),
+            transparent 40%
+        ),
+        radial-gradient(
+            ellipse at 85% 35%,
+            rgba(112, 50, 180, 0.15),
+            transparent 35%
+        ),
+        linear-gradient(145deg, #070b20, #0a1030 55%, #08091d);
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
