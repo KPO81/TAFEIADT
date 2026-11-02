@@ -1,7 +1,5 @@
 
-/* ========================================
-   DOCTOR WHO — MODERN RESPONSIVE THEME
-   ======================================== */
+
 
 :root {
   color-scheme: dark;
@@ -27,7 +25,7 @@
   --container: 1180px;
 }
 
-/* Reset and base */
+
 
 * {
   box-sizing: border-box;
@@ -79,11 +77,6 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-a:focus-visible {
-  outline: 3px solid var(--cyan);
-  outline-offset: 5px;
-}
-
 p {
   margin: 0 0 1rem;
 }
@@ -110,7 +103,7 @@ h3 {
   background: var(--cyan);
 }
 
-/* Space background decoration (replaces the old empty div) */
+
 
 body::before {
   content: "";
@@ -136,7 +129,7 @@ body::before {
   opacity: 0.5;
 }
 
-/* Header and navigation */
+
 
 .site-header {
   position: relative;
@@ -189,8 +182,6 @@ body::before {
   color: var(--cyan);
 }
 
-/* Main container */
-
 .container {
   width: min(calc(100% - 48px), var(--container));
   margin-inline: auto;
@@ -241,7 +232,7 @@ body::before {
   font-size: 1rem;
 }
 
-/* Landing hero */
+
 
 .hero {
   position: relative;
