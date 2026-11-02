@@ -20,6 +20,9 @@
     --container: 1180px;
 }
 
+
+/* Base styles */
+
 * {
     box-sizing: border-box;
 }
@@ -90,4 +93,51 @@ h2 {
 
 h3 {
     font-size: 1.15rem;
+}
+
+::selection {
+    color: var(--bg);
+    background: var(--cyan);
+}
+
+/* Background */
+
+.planet-decoration {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, #ffffffc9, transparent),
+        radial-gradient(2px 2px at 35% 75%, #ffffffa6, transparent),
+        radial-gradient(1px 1px at 65% 25%, #ffffffad, transparent),
+        radial-gradient(2px 2px at 85% 65%, #ffffff91, transparent),
+        radial-gradient(1px 1px at 50% 50%, #ffffff80, transparent);
+
+    background-size:
+    220px 240px,
+    290px 310px,
+    190px 210px,
+    320px 270px,
+    250px 260px;
+
+    opacity: 0.5;
+}
+
+/* Header and Nav */
+
+.site-header {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    width: 100%;
+    min-height: 88px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
 }
