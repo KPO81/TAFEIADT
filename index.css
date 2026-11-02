@@ -141,3 +141,59 @@ h3 {
     margin: 0 auto;
     border-bottom: 1px solid var(--border);
 }
+
+.drlogo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    white-space: nowrap;
+}
+
+.drlogo-icon {
+    color: var(--cyan);
+    font-size: 1.75rem;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+
+.site-nav a {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: colour 180ms ease;
+}
+
+.site-nav a:hover {
+    color: var(--cyan);
+}
+
+.container {
+    width: 100%;
+    margin-inline: 30px;
+}
+
+.content-section {
+    padding-block: 80px;
+    scroll-margin-top: 30px;
+}
+
+.legend {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+    color: var(--cyan);
+}
+
