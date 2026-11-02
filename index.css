@@ -66,3 +66,24 @@ a {
     text-decoration: none;
 }
 
+a:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2, 
+h3 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    letter-spacing: -0.045em;
+}
