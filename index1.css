@@ -1,4 +1,5 @@
 
+/* indexZ.html */
 
 
 :root {
@@ -47,12 +48,12 @@ body {
   background:
     radial-gradient(
       ellipse at 15% 10%,
-      rgba(53, 69, 160, 0.24),
-      transparent 40%
+      rgba(226, 97, 22, 0.24),
+      transparent 42%
     ),
     radial-gradient(
       ellipse at 85% 35%,
-      rgba(112, 50, 180, 0.15),
+      rgba(26, 212, 88, 0.15),
       transparent 35%
     ),
     linear-gradient(145deg, #070b20, #0a1030 55%, #08091d);
@@ -126,7 +127,7 @@ body::before {
     320px 270px,
     250px 260px;
 
-  opacity: 0.5;
+  opacity: 0.85;
 }
 
 
@@ -348,7 +349,7 @@ body::before {
   letter-spacing: 0.2em;
 }
 
-/* Buttons */
+
 
 .button {
   display: inline-flex;
@@ -391,7 +392,24 @@ body::before {
   transform: translateY(0);
 }
 
-/* About card */
+.button-card {
+  display: flex;
+  width: fit-content;
+  margin: 16px auto 0;   /* top, left/right auto, bottom */
+  min-height: 40px;
+  padding: 8px 16px;
+
+  border-color: rgba(240, 171, 252, 0.4);
+  color: var(--pink);
+  background: rgba(240, 171, 252, 0.08);
+  font-size: 0.78rem;
+}
+
+.button-card:hover {
+  transform: translateY(-2px);
+  color: var(--bg);
+  background: var(--pink);
+}
 
 .about-card {
   display: grid;
@@ -592,8 +610,6 @@ body::before {
 .page-hero .subtitle {
   max-width: 700px;
 }
-
-/* Villain cards */
 
 .villain-grid {
   display: grid;
@@ -1030,7 +1046,21 @@ body::before {
   }
 }
 
-/* Accessibility: respect reduced-motion preferences */
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+.about-card,
+.image-card,
+.villain-card,
+.regeneration-card,
+.villain-card {
+  animation: card-fade-in 1s ease backwards;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -1041,4 +1071,11 @@ body::before {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+
+
+
+.villains-list {
+  color: var(--cyan);
 }
